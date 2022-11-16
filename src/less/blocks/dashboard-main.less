@@ -1,0 +1,155 @@
+.dashboard-main {
+  padding: 41px 48px 0 71px;
+}
+
+.dashboard-main__hello-message {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.dashboard-main__content-container {
+  min-width: fit-content;
+  width: 60vw;
+  margin-left: 47px;
+  box-sizing: border-box;
+  padding: 29px 40px 41px 40px;
+  background: #ffffff;
+  box-shadow: 0 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 1px solid #eeeeee;
+    top: 165px;
+    left: 0;
+  }
+}
+
+.dashboard-main__top-info-container {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard-main__title {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+}
+
+.dashboard-main__filter {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+
+  color: #16c098;
+}
+
+.dashboard-main__search {
+  cursor: pointer;
+  min-width: 216px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  padding: 10px 20px 10px 40px;
+  box-sizing: border-box;
+  border: none;
+  background: #f9fbff url("../../../public/img/search.svg") no-repeat 8px center;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+
+    color: #b5b7c0;
+  }
+
+  &:hover {
+    outline: 1px solid #000000;
+  }
+}
+
+.dashboard-main__buttom-info-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-main__page-counter {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #b5b7c0;
+  margin: 0;
+}
+
+.nav__list {
+  .list-none;
+  display: flex;
+  align-items: center;
+  width: 271px;
+  justify-content: space-between;
+}
+
+.nav__button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: none;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #404b52;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:not(&--points) {
+    background: #f5f5f5;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+  }
+
+  .nav__list &--active {
+    background: #5932ea;
+    border: 1px solid #5932ea;
+    color: #ffffff;
+  }
+
+  &--arrows::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    top: 5px;
+    left: 7px;
+    background: url("../../../public/img/arrow-for-button.svg") no-repeat center
+      center;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    transform: scale(1.15);
+  }
+
+  &--forward {
+    transform: rotate(180deg);
+
+    &:hover {
+      transform: rotate(180deg) scale(1.15);
+    }
+  }
+}
