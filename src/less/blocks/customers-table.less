@@ -3,8 +3,10 @@
   text-align: left;
   position: relative;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
-  border-collapse: collapse;
+
+  @media (max-width: @max-phone-width) {
+    border-spacing: 5px;
+  }
 }
 
 .customers-table__title {
@@ -13,15 +15,26 @@
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #b5b7c0;
+
+  @media (max-width: @max-phone-width) {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }
 
 .customers-table__ceil {
   border-bottom: 1px solid #eeeeee;
-  padding: 20px 0;
+  padding: 18.2px 0;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #292d32;
+  width: max-content;
+
+  @media (max-width: @max-phone-width) {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }
 
 .customers-table__ceil-status {
